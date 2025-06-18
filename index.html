@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Profile Card</title>
+    <style>
+        body {
+            background: #f0f4fc;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            width: 320px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .card-header {
+            background: linear-gradient(to right, #1f1f1f, #2d2d2d);
+            color: #d0d0ff;
+            height: 100px;
+            display: flex;
+            padding-bottom: 30px;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .profile-img {
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .profile-img img {
+            width: 120px;
+            height: 120px;
+            background: #222;
+            border-radius: 50%;
+            border: 6px solid white;
+        }
+
+        .card-body {
+            padding: 60px 20px 30px;
+        }
+
+        .card-body h2 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .username {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .stats span {
+            color: #333;
+        }
+
+        .links {
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .location {
+            color: #888;
+        }
+
+        .follow-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .follow-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            Design + Code
+        </div>
+        <div class="profile-img">
+            <img src="/abin_pro.jpg" alt="Profile Icon" />
+        </div>
+        <div class="card-body">
+            <h2>Abin Antony</h2>
+            <p class="username">@Acodehacked</p>
+            <p class="bio">
+                Building Websites and Webapps with Seamless User Experience Across Devices.
+            </p>
+            <div class="stats">
+                <span><strong>3M</strong> Following</span>
+                <span><strong>84</strong> Followers</span>
+            </div>
+            <div class="links">
+                <a href="https://abinantony.site" target="_blank">abinantony.site</a>
+                <span class="location">India</span>
+            </div>
+            <button class="follow-btn">Follow</button>
+        </div>
+    </div>
+</body>
+
+</html>
